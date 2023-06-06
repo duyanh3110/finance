@@ -1,9 +1,5 @@
 import { FunctionComponent } from "react";
-
-interface SvgIconProps {
-    path: string;
-    fillColor: string;
-}
+import { SvgIconProps } from "@/models/app.model";
 
 export const Icon: FunctionComponent<SvgIconProps> = ({
     fillColor = "fill-on",
