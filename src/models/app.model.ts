@@ -1,4 +1,4 @@
 export interface SvgIconProps {
-    path: string | string[];
+    path?: string | string[];
     fillColor: string;
 }
