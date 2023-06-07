@@ -21,5 +21,9 @@ module.exports = {
     ],
     rules: {
         "react-refresh/only-export-components": "warn",
+        "@typescript-eslint/no-empty-function": [
+            "error",
+            { allow: ["arrowFunctions"] },
+        ],
     },
 };

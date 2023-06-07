@@ -10,5 +10,10 @@
 @layer base {
     html {
         font-family: "KumbhSans", serif;
+        background-color: theme("colors.pure-white");
     }
+}
+
+.dark {
+    background-color: theme("colors.dark-2");
 }

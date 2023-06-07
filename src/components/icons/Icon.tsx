@@ -4,6 +4,9 @@ import { SvgIconProps } from "@/models/app.model";
 export const Icon: FunctionComponent<SvgIconProps> = ({
     fillColor = "fill-on",
     path = "",
+    handleClick = () => {},
+    width = 20,
+    height = 20,
 }) => {
     const pathComponent =
         typeof path === "string" ? (
@@ -14,11 +17,14 @@ export const Icon: FunctionComponent<SvgIconProps> = ({
             ))
         );
 
+    const iconClass = width === 20 && height === 20 ? "w-5 h-5" : "w-8 h-8";
+
     return (
         <svg
-            viewBox="0 0 20 20"
+            viewBox={`0 0 ${width} ${height}`}
             xmlns="http://www.w3.org/2000/svg"
-            className={`w-5 h-5 ${fillColor}`}
+            className={`${iconClass} ${fillColor}`}
+            onClick={handleClick}
         >
             {pathComponent}
         </svg>
