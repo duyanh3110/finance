@@ -13,6 +13,7 @@ export default {
             "16px": ["16px", "20px"],
             "18px": ["18px", "22px"],
             "20px": ["20px", "25px"],
+            "30px": ["30px", "37px"],
         },
         extend: {
             fontFamily: {
